@@ -57,14 +57,7 @@ public abstract class Base {
 	}
 
 
-	/*
-	 * public void getScreenshot(String s) throws IOException { File scrfile=
-	 * ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	 * FileUtils.copyFile(scrfile,new
-	 * File(System.getProperty("user.dir")+"\\sceenshots"+"\\"+s+".png"));
-	 * 
-	 * }
-	 */	
+	
 	
 	public boolean loginCheck(AndroidDriver<AndroidElement> driver, String userID,String pwd) throws InterruptedException {
 		
@@ -80,7 +73,7 @@ public abstract class Base {
 		driver.findElementById("com.amazon.mShop.android.shopping:id/chrome_action_bar_burger_icon").click();
 		String loginUser = driver.findElementByClassName("android.widget.TextView").getText();
 		driver.findElementByXPath("//android.widget.TextView[@text='Home']").click();
-		return loginUser.contains("Yeshwanth");
+		return loginUser.contains("Dillip");
 	}
 	
 	
