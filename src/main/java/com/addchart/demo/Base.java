@@ -58,7 +58,6 @@ public abstract class Base {
 
 
 	
-	
 	public boolean loginCheck(AndroidDriver<AndroidElement> driver, String userID,String pwd) throws InterruptedException {
 		
 		driver.findElementByXPath("//android.widget.Button[@text='Already a customer? Sign in']").click();
